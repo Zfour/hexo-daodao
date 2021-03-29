@@ -1,0 +1,43 @@
+/* 主页哔哔bb */
+#bber-talk {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+
+#bber-talk .li-style {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: 0.3s;
+}
+
+.li-style:hover{
+    color: var(--heo-hovertext);
+}
+
+ul,li{
+    list-style:none;
+    display:block;
+    margin: 0;
+    padding: 0;
+}
+
+#bbTimeList{
+    background: var(--card-bg);
+    color: var(--fontcolor);
+    padding: 0.6rem 1rem 0.5rem 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: var(--shadow-lightblack);
+    display: flex;
+}
+.bber-gotobb {
+    line-height: 25px;
+    margin-left: 8px;
+    transition: .3s;
+}
