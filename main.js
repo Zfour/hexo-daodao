@@ -32,11 +32,14 @@ function getbbdata(){
 var generateBBHtml = array => {
     var $dom = document.querySelector('#bber-talk');
     var result = '';
-
-    if (array.length) {
-        for (let i = 0; i < 10; i++) {
+if (array.length) {
+        if (array.length<10){
+            array_list_num = array.length
+        }else {
+            array_list_num = 10
+        }
+        for (let i = 0; i < array_list_num; i++) {
             var flag_daodao = true
-            console.log(fliter_daodao)
             for (item of fliter_daodao){
                 if(array[i].content.indexOf(item) >= 0){
                     flag_daodao = false
