@@ -70,7 +70,7 @@ hexo.extend.filter.register('after_generate',function() {
 
         }else{
             var css_text =`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-daodao/main.css">`;
-            var js_text =`<script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-daodao/main.js"></script>`
+            var js_text =`<script >var bbsurl = "${daodao_swiper.url}";var fliter_daodao = ${fliter_daodao}</script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-daodao/main.js"></script>`
 
         }
         common_injector('daodao_swiper', daodao_swiper,daodao_swiper.temple_html,js_text,css_text)
