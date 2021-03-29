@@ -38,7 +38,6 @@ jobs:
       - name: 5. 生成文件
         run: |
           export TZ='Asia/Shanghai'
-          npm run build
       
       - name: 6. 发布包
         run: |
