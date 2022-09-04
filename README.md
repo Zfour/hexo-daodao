@@ -1,8 +1,10 @@
+# vercel被墙了
+demo域名由 https://daodao-three.vercel.app 替换为 https://daodao.zfe.space/
 # hexo-daodao
 
 ```yml
 daodao_swiper:
-  url: https://daodao-three.vercel.app/api?q=20
+  url: https://daodao.zfe.space/api?q=20
   fliter: "['img','iframe']"
   priority: 10
   enable: true
